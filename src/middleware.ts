@@ -4,8 +4,7 @@ import { authMiddleware } from "./middlewares/auth.middleware";
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
-  const excludedPaths = ["/api/users/login", "/api/users/signup"];
-  if (excludedPaths.includes(pathname)) {
+  if (pathname.startsWith("/api/auth/")) {
     return;
   }
 
