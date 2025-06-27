@@ -1,5 +1,4 @@
 import { NextRequest } from "next/server";
-import { ObjectId } from "mongodb";
 
 import clientPromise from "@/lib/mongodb";
 import { ApiResponse, CookieParams } from "@/utils/ApiResponse";
