@@ -1,4 +1,4 @@
-import { NextRequest, NextResponse } from "next/server";
+import { NextRequest } from "next/server";
 import bcrypt from "bcryptjs";
 
 import clientPromise from "@/lib/mongodb";
@@ -9,7 +9,7 @@ import {
   generateRefreshToken,
 } from "@/utils/tokenHandler";
 
-export async function POST(request: NextRequest, response: NextResponse) {
+export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
 

@@ -1,5 +1,4 @@
 import { NextRequest } from "next/server";
-import { cookies } from "next/headers";
 import { ObjectId } from "mongodb";
 
 import clientPromise from "@/lib/mongodb";
